@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="js/script.js">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <main>
+        <form id="login_form" class="form_class" action="login.html" method="post">
+            <div class="form_div">
+                <label>Name:</label>
+                <input class="field_class" name="login_txt" type="text" placeholder="Insira o seu nome" autofocus>
+                <label>Login:</label>
+                <input class="field_class" name="login_txt" type="text" placeholder="Insira o seu login" autofocus>
+                <label>Password:</label>
+                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Insira a sua senha">
+                <label>Repeat Password:</label>
+                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="Repita sua senha de novo">
+                <button class="submit_class" type="submit" form="login_form" onclick="validarLogin()">Entrar</button>
+            </div>
+            <div class="info_div">
+                <p>Ainda não é um usuário registrado? <a href="login.html">Cadastre-se!</a></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="#">Fabiano Freitas&trade;</a></p>
+    </footer>
+</body>
+</html>
